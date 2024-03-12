@@ -16,7 +16,7 @@ $(document).ready(function () { //Función Ready
 
         //Validación ID de búsqueda
         let inputOk = true;
-        let validacionTest = /^[0-9]*$/
+        const validacionTest = /^[0-9]*$/
         if (valueInput == "") {
             inputOk = false;
             errorInput.text("Debe ingresar un número");
@@ -67,7 +67,7 @@ $(document).ready(function () { //Función Ready
                         </div>
                     </div>
                 `);
-                    // Creación de gráfico detorta usando CanvasJS 
+                    // Creación de gráfico de torta usando CanvasJS 
                     let chart = new CanvasJS.Chart("superheroChart", {
                         theme: "light1",
                         exportEnabled: true,
